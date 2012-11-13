@@ -1,77 +1,63 @@
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-		<title>第二代智能大棚</title>		
-	    <style type="text/css">
-	         /**
-	         * Example of an initial loading indicator.
-	         * It is recommended to keep this as minimal as possible to provide instant feedback
-	         * while other resources are still being loaded for the first time
-	         */
-	        html, body {
-	            height: 100%;
-	            background-color: #1985D0
-	        }
-	
-	        #appLoadingIndicator {
-	            position: absolute;
-	            top: 50%;
-	            margin-top: -15px;
-	            text-align: center;
-	            width: 100%;
-	            height: 30px;
-	            -webkit-animation-name: appLoadingIndicator;
-	            -webkit-animation-duration: 0.5s;
-	            -webkit-animation-iteration-count: infinite;
-	            -webkit-animation-direction: linear;
-	        }
-	
-	        #appLoadingIndicator > * {
-	            background-color: #FFFFFF;
-	            display: inline-block;
-	            height: 30px;
-	            -webkit-border-radius: 15px;
-	            margin: 0 5px;
-	            width: 30px;
-	            opacity: 0.8;
-	        }
-	
-	        @-webkit-keyframes appLoadingIndicator{
-	            0% {
-	                opacity: 0.8
-	            }
-	            50% {
-	                opacity: 0
-	            }
-	            100% {
-	                opacity: 0.8
-	            }
-	        }
-	    </style>
-	    
-    	<link rel="stylesheet" href="res/css/sencha-touch.css" type="text/css">
-    	<link rel="stylesheet" href="res/css/style.css" type="text/css">
-    	<script type="text/javascript" src="sdk/cordova-2.2.0.js"></script>
-    	<script type="text/javascript" src="sdk/sencha-touch-all-2.1.js"></script>
-    	<!-- 
-    	<script type="text/javascript" src="sdk/plugins/webintent.js"></script>
-    	<script type="text/javascript" src="sdk/plugins/diagnostic.js"></script>  
-    	<script type="text/javascript" src="sdk/plugins/appinfo.js"></script>    
-    	-->
-		<script type="text/javascript"> 
-			//android 4.0 白屏
-			Ext.Loader.setConfig({disableCaching: false }); 
-			Ext.Ajax.setDisableCaching(false); 
-		</script>
-    	<script type="text/javascript" src="app.js"></script>
-    </head>
-    <body>
-	    <div id="appLoadingIndicator">
-	        <div></div>
-	        <div></div>
-	        <div></div>
-	    </div>
-    </body>
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>mytouch</title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script type="text/javascript">(function(h){function f(c,d){document.write('<meta name="'+c+'" content="'+d+'">')}if("undefined"===typeof g)var g=h.Ext={};g.blink=function(c){var d=c.js||[],c=c.css||[],b,e,a;f("viewport","width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no");f("apple-mobile-web-app-capable","yes");f("apple-touch-fullscreen","yes");b=0;for(e=c.length;b<e;b++)a=c[b],"string"!=typeof a&&(a=a.path),document.write('<link rel="stylesheet" href="'+a+'">');b=0;for(e=d.length;b<
+e;b++)a=d[b],"string"!=typeof a&&(a=a.path),document.write('<script src="'+a+'"><\/script>')}})(this);;Ext.blink({"id":"86a0a0c8-aee0-40ae-a528-1400ebf9ea5d","js":[{"type":"js","path":"touch/sencha-touch.js"},{"update":"delta","path":"app.js","type":"js","bundle":true}],"css":[{"update":"delta","type":"css","path":"resources/css/app.css"}]})</script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
 </html>
